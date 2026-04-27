@@ -1,9 +1,67 @@
-.naam{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    color: blue;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #1f2937;
+    background-color: #e8f4ff;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.title_bar {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    padding: 35px 20px;
+    border-radius: 16px;
+    color: white;
+    background-color: #2563eb;
+}
+
+.title_bar h1 {
+    font-size: 48px;
+}
+
+.info_box,
+.image_box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.image_box {
+    min-height: 180px;
+}
+
+.image_box::before {
+    content: "Afbeelding";
+    color: #6b7280;
+}
+
+.image_box img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .title_bar h1 {
+        font-size: 34px;
+    }
 }
